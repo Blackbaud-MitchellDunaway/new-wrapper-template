@@ -39,8 +39,8 @@ body {
 -----------------------------------------------------------------------*/
 
 body {
-	font: 14px/18px Arial, Helvetica, Verdana, sans-serif;
-	color: #333;
+	font: 1em/1em Arial, Helvetica, Verdana, sans-serif;
+	color: rgb(115, 115, 115);
 }
 
 h1,
@@ -101,9 +101,31 @@ a:hover {
 	overflow: hidden;
 }
 
-.abs-pos {
-	position: absolute;
+.top-level > .inner {
+	max-width: 960px;
+	position: relative;
+	margin: 0 auto;
+	
 }
+
+.top-level > .inner,
+nav ul { 
+	zoom: 1; 
+}
+
+.top-level > .inner:after,
+nav ul:after { 
+	clear: both; 
+}
+
+.top-level > .inner:before,
+.top-level > .inner:after,
+nav ul:before,
+nav ul:after { 
+	content: ""; 
+	display: table; 
+}
+
 
 /* Main Structure
 -----------------------------------------------------------------------*/
@@ -123,7 +145,7 @@ header.top-level {
 
 }
 
-/* Navigation
+/* Navigation (Global)
 -----------------------------------------------------------------------*/
 
 nav ul {
@@ -136,21 +158,57 @@ nav li {
 	padding: 0;
 	margin: 0;
 	float: left;
+	position: relative;
 }
 
-nav.top-level {
-
+nav li a {
+	display: block;
 }
 
-nav.top-level a,
-nav.top-level a:link,
-nav.top-level a:visited {
-
+nav li:hover .drop-down,
+nav li:active .drop-down {
+	display: block;
 }
 
-nav.top-level a:hover,
-nav.top-level a:active {
+nav .drop-down {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
 
+nav .drop-down li {
+	float: none;
+}
+
+/* Navigation (#main_navigation)
+-----------------------------------------------------------------------*/
+
+#main_navigation > li{
+}
+
+#main_navigation > li:first-child{
+}
+
+#main_navigation > li > a,
+#main_navigation > li > a:link,
+#main_navigation > li > a:visited {
+}
+
+#main_navigation > li > a:hover,
+#main_navigation > li > a:active {
+}
+
+#main_navigation .drop-down {
+}
+
+#main_navigation .drop-down a,
+#main_navigation .drop-down a:link,
+#main_navigation .drop-down a:visited {
+}
+
+#main_navigation .drop-down a:hover,
+#main_navigation .drop-down a:active {
 }
 
 /* #content
