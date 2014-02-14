@@ -35,10 +35,35 @@ body {
 	margin: 0 auto;
 }
 
+textarea, 
+input[type="text"], 
+input[type="submit"],
+input[type="email"] {
+	-webkit-appearance: none;
+}
+
+button, 
+input, 
+select, 
+textarea {
+	-webkit-border-radius: 0px; 
+	-moz-border-radius: 0px; 
+	border-radius: 0px;
+}
+
 /* Typography
 -----------------------------------------------------------------------*/
 
-body {
+body,
+p, 
+li, 
+ol, 
+ul, 
+table, 
+tr, 
+th, 
+td, 
+.Explicit  {
 	font: 1em/1em Arial, Helvetica, Verdana, sans-serif;
 	color: rgb(115, 115, 115);
 }
@@ -77,7 +102,7 @@ h6 {
 }
 
 p {
-
+	margin-top: 0;
 }
 
 a,
@@ -177,6 +202,11 @@ nav .drop-down {
 	left: 0;
 }
 
+nav .drop-down.last {
+	left: auto;
+	right: 0;
+}
+
 nav .drop-down li {
 	float: none;
 }
@@ -184,19 +214,28 @@ nav .drop-down li {
 /* Navigation (#main_navigation)
 -----------------------------------------------------------------------*/
 
-#main_navigation > li{
+#main_navigation {
+}
+
+#main_navigation > ul {
+	position: relative;
+}
+
+#main_navigation > ul > li{
 }
 
 #main_navigation > li:first-child{
 }
 
-#main_navigation > li > a,
-#main_navigation > li > a:link,
-#main_navigation > li > a:visited {
+#main_navigation > ul > li > a,
+#main_navigation > ul > li > a:link,
+#main_navigation > ul > li > a:visited,
+#main_navigation > ul > li > a:hover,
+#main_navigation > ul > li > a:active {
 }
 
-#main_navigation > li > a:hover,
-#main_navigation > li > a:active {
+#main_navigation > ul > li:hover > a,
+#main_navigation > ul > li:active > a  {
 }
 
 #main_navigation .drop-down {
@@ -218,6 +257,10 @@ nav .drop-down li {
 
 }
 
+/* Sidebar
+-----------------------------------------------------------------------*/
+
+
 /* Footer
 -----------------------------------------------------------------------*/
 
@@ -234,23 +277,21 @@ footer.top-level {
 }
 
 
-@media only screen and (max-width: 991px) {
-
-
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
 
 }
 
 
 @media only screen and (max-width: 767px) {
-
-
+    
 
 }
 
 
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
 
-	
 }
 
 

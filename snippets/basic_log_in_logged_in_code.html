@@ -1,0 +1,23 @@
+
+[[?xxnullxx::x[[S1:user_name]]x::
+	<form action="UserLogin" id="lLogonForm" name="lLogonForm" method="post">
+	   <input type="text" name="USERNAME" id="USERNAME" size="8" maxlength="[[S0:USER_MAX_LOGIN_LEN]]" title="User Name" />
+	   <input type="password" name="Password" id="Password" size="8" maxlength="[[S0:USER_MAX_PASSWD_LEN]]" title="Password" />
+	   <input type="submit" name="login" id="login" value="Login" />
+	   <input type="hidden" name="NEXTURL" value="[[S8]]"/>
+	   <a href="UserLogin">Forgot your password?</a>
+	   <label for="RememberMe"><input type="checkbox" name="RememberMe" id="RememberMe" value="RememberMe" title="Remember Me" /> remember me</label>
+	</form>
+
+::
+   <p><strong>Welcome, [[S1:first_name]]</strong></p>
+   <p><a href="UserLogin?logout=sign+off&NEXTURL=[[T1:[[S8]]]]">Logout</a> |
+      <a href="[[S11:81=ConsProfileUser]]">My Profile</a>
+      [[?xx::x[[E48:[[S80:trID]]:part-type-id]]x::::<a href=”TRC?pg=center&fr_id=[[S80trID]]“>Participant Center</a>]]
+</p>
+]]
+
+
+
+
+

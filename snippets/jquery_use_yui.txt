@@ -1,0 +1,12 @@
+<script type="text/javascript">
+
+Y.use('jquery-noconflict', function() {
+    // your javascript code here.
+	
+	jQuery(document).ready(function($){
+
+    });
+
+});
+
+</script>
