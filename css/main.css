@@ -123,6 +123,7 @@ a:hover {
 .img-replace {
 	display: block;
 	text-indent: -9999em;
+	text-align: left !important;
 	overflow: hidden;
 }
 
