@@ -41,3 +41,14 @@ footer.top-level
 ---------------------------------------------------------------
 ## URL of example
 http://vateam.convio.net/site/PageNavigator/mitch_baseline_wrapper_example.html
+
+---------------------------------------------------------------
+## steps to implement
+
+1. copy files out of repo
+2. upload cs and js files to FTP
+3. update paths in reus_wrpr_mitch_baseline_head to FTP files
+4. update names of reus files to match current project
+5. create pagebuilder pages in LO
+6. create new wrapper
+7. apply new wrapper to test page for testing
